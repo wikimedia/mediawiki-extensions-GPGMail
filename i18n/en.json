@@ -1,0 +1,7 @@
+{
+	"gpgmail-desc": "Encrypt emails with GPG",
+	"gpgmail-pref-enable": "Encrypt emails with GPG",
+	"gpgmail-pref-key": "GPG public key",
+	"gpgmail-pref-key-help": "For help on getting a public key, see [https://help.ubuntu.com/community/GnuPrivacyGuardHowto this page].",
+	"gpgmail-encrypt-error": "There was an error while encrypting the email."
+}

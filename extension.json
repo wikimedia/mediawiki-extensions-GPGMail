@@ -1,0 +1,43 @@
+{
+    "name": "GPGMail",
+    "version": "0.1.0",
+    "author": [
+        "Gergő Tisza"
+    ],
+    "url": "https://www.mediawiki.org/wiki/Extension:GPGMail",
+    "descriptionmsg": "gpgmail-desc",
+    "license-name": "MIT",
+    "type": "other",
+    "callback": "GPGMailHooks::registerExtension",
+    "AutoloadClasses": {
+        "GPGMailHooks": "GPGMailHooks.php"
+    },
+    "config": {
+        "GPGMailBinary": "gpg",
+        "GPGMailTempDir": "/tmp"
+    },
+    "Hooks": {
+        "GetPreferences": [
+            "GPGMailHooks::onGetPreferences"
+        ],
+        "UserMailerSplitTo": [
+            "GPGMailHooks::onUserMailerSplitTo"
+        ],
+        "UserMailerTransformContent": [
+            "GPGMailHooks::onUserMailerTransformContent"
+        ],
+        "UserMailerTransformMessage": [
+            "GPGMailHooks::onUserMailerTransformMessage"
+        ]
+    },
+    "config": {
+        "@GpgMailUsePgpMime": "true: use PGP/MIME, false: use inline encryption",
+        "GpgMailUsePgpMime": true
+    },
+    "MessagesDirs": {
+        "GPGMail": [
+            "i18n"
+        ]
+    },
+    "manifest_version": 1
+}

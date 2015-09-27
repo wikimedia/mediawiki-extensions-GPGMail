@@ -1,0 +1,38 @@
+{
+    "name": "wikimedia/mediawiki-extensions-GPGMail",
+    "description": "Encrypt emails with GPG",
+    "version": "0.1.0",
+    "keywords": ["gpg", "encryption"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gergő Tisza",
+            "email": "tgr.huwiki@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://phabricator.wikimedia.org/???",
+        "source": "https://git.wikimedia.org/???"
+    },
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/tgr/php-gpglib"
+    }
+],
+    "require": {
+        "composer/installers": ">=1.0.1",
+        "wikimedia/gpglib": "0.2.*"
+    },
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "0.9",
+        "jakub-onderka/php-console-highlighter": "0.*",
+        "mediawiki/mediawiki-codesniffer": "0.4.0"
+    },
+    "scripts": {
+        "test": [
+            "parallel-lint . --exclude vendor",
+            "phpcs -p -s"
+        ]
+    }
+}
