@@ -22,7 +22,7 @@ class GPGMailHooks {
 	 */
 	public static function registerExtension() {
 		if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
-			require_once( __DIR__ . '/vendor/autoload.php' );
+			require_once __DIR__ . '/vendor/autoload.php';
 		}
 	}
 
@@ -111,7 +111,9 @@ class GPGMailHooks {
 	 * @param Message|string $error Error message when encryption fails
 	 * @return bool
 	 */
-	public static function onUserMailerTransformMessage( $to, $from, &$subject, &$headers, &$body, &$error ) {
+	public static function onUserMailerTransformMessage( $to, $from,
+		&$subject, &$headers, &$body, &$error
+	) {
 		if ( count( $to ) > 1 ) {
 			// users who requested encryption have been split out already by UserMailerSplitTo
 			return true;
@@ -177,7 +179,8 @@ class GPGMailHooks {
 		if ( $user->getBoolOption( 'gpgmail-enable' ) && self::usePgpMime() ) {
 			try {
 				$pgpMime = new PgpMime( self::getGPGLib() );
-				list( $headers, $body ) = $pgpMime->encrypt( $headers, $body, $user->getOption( 'gpgmail-key' ) );
+				list( $headers, $body ) = $pgpMime->encrypt(
+					$headers, $body, $user->getOption( 'gpgmail-key' ) );
 			} catch ( GpgLibException $e ) {
 				return Status::newFatal( new RawMessage( $e->getMessage() ) );
 			}

@@ -1,4 +1,7 @@
 {
+	"@metadata": {
+		"authors": ["Gergő Tisza"]
+	},
 	"gpgmail-desc": "Encrypt emails with GPG",
 	"gpgmail-pref-enable": "Encrypt emails with GPG",
 	"gpgmail-pref-key": "GPG public key",
