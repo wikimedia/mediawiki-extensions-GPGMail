@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": ["Gergő Tisza"]
+		"authors": [
+			"Gergő Tisza"
+		]
 	},
 	"gpgmail-desc": "{{desc|name=GPGMail|url=https://www.mediawiki.org/wiki/Extension:GPGMail}}",
 	"gpgmail-pref-enable": "Label for the checkbox in preferences which enables encryption.",
