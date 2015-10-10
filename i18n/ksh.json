@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"gpgmail-desc": "Dunn <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Brehfe“\">e-mails</i> met <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"GNU Privacy Guard\">GPG</i> verschlößele",
+	"gpgmail-pref-enable": "Dunn <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Brehfe“\">e-mails</i> met <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"GNU Privacy Guard\">GPG</i> verschlößele",
+	"gpgmail-pref-key": "Der öffentlesche Schößel vum <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"GNU Privacy Guard\">GPG</i>",
+	"gpgmail-encrypt-error": "Ene Fähler es opjetrodde beim <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i>Verschlößele."
+}
