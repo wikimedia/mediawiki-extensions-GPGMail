@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hwangjy9"
+			"Hwangjy9",
+			"Yearning"
 		]
 	},
-	"gpgmail-desc": "GPG로 이메일을 암호화합니다"
+	"gpgmail-desc": "GPG로 이메일을 암호화합니다",
+	"gpgmail-pref-key": "GPG 공공 키"
 }
