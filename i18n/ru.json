@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaganer"
+		]
+	},
+	"gpgmail-pref-key-help": "См. [https://help.ubuntu.com/community/GnuPrivacyGuardHowto справку по Ubuntu] с информацией по получению публичного ключа."
+}
