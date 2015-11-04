@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm"
+		]
+	},
+	"gpgmail-desc": "Encriptar correos electrónicos con GPG",
+	"gpgmail-pref-enable": "Encriptar correos electrónicos con GPG",
+	"gpgmail-pref-key": "Clave pública GPG"
+}
