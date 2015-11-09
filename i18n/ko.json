@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Hwangjy9",
-			"Yearning"
+			"Yearning",
+			"Revi"
 		]
 	},
 	"gpgmail-desc": "GPG로 이메일을 암호화합니다",
-	"gpgmail-pref-key": "GPG 공공 키"
+	"gpgmail-pref-enable": "GPG로 이메일을 암호화합니다",
+	"gpgmail-pref-key": "GPG 공개 키",
+	"gpgmail-encrypt-error": "이메일을 암호화하던 중 오류가 발생했습니다."
 }
