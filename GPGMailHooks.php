@@ -33,19 +33,19 @@ class GPGMailHooks {
 	 * @return bool
 	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
-		$preferences['gpgmail-enable'] = array(
+		$preferences['gpgmail-enable'] = [
 			'type' => 'toggle',
 			'label-message' => 'gpgmail-pref-enable',
 			'section' => 'personal/email',
-		);
-		$preferences['gpgmail-key'] = array(
+		];
+		$preferences['gpgmail-key'] = [
 			'type' => 'textarea',
 			'label-message' => 'gpgmail-pref-key',
 			'help-message' => 'gpgmail-pref-key-help',
 			'section' => 'personal/email',
 			'validation-callback' => 'GPGMailHooks::validateKey',
-			'hide-if' => array( '===', 'gpgmail-enable', '' ),
-		);
+			'hide-if' => [ '===', 'gpgmail-enable', '' ],
+		];
 		return true;
 	}
 
@@ -57,7 +57,7 @@ class GPGMailHooks {
 	public static function onUserMailerSplitTo( &$to ) {
 		foreach ( $to as $i => $singleTo ) {
 			if ( ! $singleTo instanceof MailAddress ) {
-				self::getLogger()->warning( 'invalid address: {to} ', array( 'to' => $singleTo ) );
+				self::getLogger()->warning( 'invalid address: {to} ', [ 'to' => $singleTo ] );
 				continue;
 			}
 			$user = User::newFromName( $singleTo->name );
