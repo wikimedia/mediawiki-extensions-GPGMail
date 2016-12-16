@@ -14,7 +14,9 @@
     },
     "config": {
         "GPGMailBinary": "gpg",
-        "GPGMailTempDir": "/tmp"
+        "GPGMailTempDir": "/tmp",
+        "@GpgMailUsePgpMime": "true: use PGP/MIME, false: use inline encryption",
+        "GpgMailUsePgpMime": true
     },
     "Hooks": {
         "GetPreferences": [
@@ -29,10 +31,6 @@
         "UserMailerTransformMessage": [
             "GPGMailHooks::onUserMailerTransformMessage"
         ]
-    },
-    "config": {
-        "@GpgMailUsePgpMime": "true: use PGP/MIME, false: use inline encryption",
-        "GpgMailUsePgpMime": true
     },
     "MessagesDirs": {
         "GPGMail": [
