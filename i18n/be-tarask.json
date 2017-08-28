@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Red Winged Duck"
+		]
+	},
+	"gpgmail-desc": "Шыфруе лісты электроннай пошты з дапамогай GPG",
+	"gpgmail-pref-enable": "Шыфраваць лісты электроннай пошты з дапамогай GPG"
+}
