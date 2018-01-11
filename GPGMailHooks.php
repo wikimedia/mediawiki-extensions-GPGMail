@@ -29,7 +29,7 @@ class GPGMailHooks {
 	/**
 	 * Add GPG checkbox + key textbox to user preferences.
 	 * @param User $user
-	 * @param array $preferences
+	 * @param array &$preferences
 	 * @return bool
 	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
@@ -51,7 +51,7 @@ class GPGMailHooks {
 
 	/**
 	 * Prevent bulk mailing users who requested encryption
-	 * @param MailAddress[] $to
+	 * @param MailAddress[] &$to
 	 * @return bool
 	 */
 	public static function onUserMailerSplitTo( &$to ) {
@@ -71,8 +71,8 @@ class GPGMailHooks {
 	/**
 	 * @param MailAddress[] $to
 	 * @param MailAddress $from
-	 * @param string|array $body Email plaintext or an array with 'text' and 'html' keys
-	 * @param Message|string $error Error message when encryption fails
+	 * @param string|array &$body Email plaintext or an array with 'text' and 'html' keys
+	 * @param Message|string &$error Error message when encryption fails
 	 * @return bool
 	 */
 	public static function onUserMailerTransformContent( array $to, $from, &$body, &$error ) {
@@ -105,10 +105,10 @@ class GPGMailHooks {
 	/**
 	 * @param MailAddress[] $to
 	 * @param MailAddress $from
-	 * @param string $subject Email subject (not MIME encoded)
-	 * @param array $headers Email headers
-	 * @param string $body Email body (MIME-encoded)
-	 * @param Message|string $error Error message when encryption fails
+	 * @param string &$subject Email subject (not MIME encoded)
+	 * @param array &$headers Email headers
+	 * @param string &$body Email body (MIME-encoded)
+	 * @param Message|string &$error Error message when encryption fails
 	 * @return bool
 	 */
 	public static function onUserMailerTransformMessage( $to, $from,
@@ -151,7 +151,7 @@ class GPGMailHooks {
 
 	/**
 	 * Encrypts the message if the target user asked for that.
-	 * @param string $text Text of the message
+	 * @param string &$text Text of the message
 	 * @param User $user User to whom the message will be sent
 	 * @return Status Success or an error message
 	 */
@@ -170,8 +170,8 @@ class GPGMailHooks {
 	}
 
 	/**
-	 * @param array $headers Email headers
-	 * @param string $body Email body (MIME-encoded)
+	 * @param array &$headers Email headers
+	 * @param string &$body Email body (MIME-encoded)
 	 * @param User $user User to whom the message will be sent
 	 * @return Status Success or an error message
 	 */
