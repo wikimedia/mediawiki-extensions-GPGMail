@@ -56,7 +56,7 @@ class GPGMailHooks {
 	 */
 	public static function onUserMailerSplitTo( &$to ) {
 		foreach ( $to as $i => $singleTo ) {
-			if ( ! $singleTo instanceof MailAddress ) {
+			if ( !$singleTo instanceof MailAddress ) {
 				self::getLogger()->warning( 'invalid address: {to} ', [ 'to' => $singleTo ] );
 				continue;
 			}
