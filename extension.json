@@ -8,6 +8,9 @@
 	"descriptionmsg": "gpgmail-desc",
 	"license-name": "MIT",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"callback": "GPGMailHooks::registerExtension",
 	"AutoloadClasses": {
 		"GPGMailHooks": "GPGMailHooks.php"
