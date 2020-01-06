@@ -13,10 +13,16 @@
 		"GPGMailHooks": "GPGMailHooks.php"
 	},
 	"config": {
-		"GPGMailBinary": "gpg",
-		"GPGMailTempDir": "/tmp",
-		"@GpgMailUsePgpMime": "true: use PGP/MIME, false: use inline encryption",
-		"GpgMailUsePgpMime": true
+		"GPGMailBinary": {
+			"value": "gpg"
+		},
+		"GPGMailTempDir": {
+			"value": "/tmp"
+		},
+		"GpgMailUsePgpMime": {
+			"description": "true: use PGP/MIME, false: use inline encryption",
+			"value": true
+		}
 	},
 	"Hooks": {
 		"GetPreferences": [
@@ -37,5 +43,5 @@
 			"i18n"
 		]
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
