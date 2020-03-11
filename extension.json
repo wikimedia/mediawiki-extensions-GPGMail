@@ -28,18 +28,10 @@
 		}
 	},
 	"Hooks": {
-		"GetPreferences": [
-			"GPGMailHooks::onGetPreferences"
-		],
-		"UserMailerSplitTo": [
-			"GPGMailHooks::onUserMailerSplitTo"
-		],
-		"UserMailerTransformContent": [
-			"GPGMailHooks::onUserMailerTransformContent"
-		],
-		"UserMailerTransformMessage": [
-			"GPGMailHooks::onUserMailerTransformMessage"
-		]
+		"GetPreferences": "GPGMailHooks::onGetPreferences",
+		"UserMailerSplitTo": "GPGMailHooks::onUserMailerSplitTo",
+		"UserMailerTransformContent": "GPGMailHooks::onUserMailerTransformContent",
+		"UserMailerTransformMessage": "GPGMailHooks::onUserMailerTransformMessage"
 	},
 	"MessagesDirs": {
 		"GPGMail": [
