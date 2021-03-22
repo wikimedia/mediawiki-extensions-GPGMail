@@ -11,6 +11,7 @@ use GpgLib\GpgLibException;
 use GpgLib\PgpMime;
 use GpgLib\ShellGpgLibFactory;
 use MediaWiki\Logger\LoggerFactory;
+use MediaWiki\MediaWikiServices;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -61,7 +62,9 @@ class GPGMailHooks {
 				continue;
 			}
 			$user = User::newFromName( $singleTo->name );
-			if ( $user->getBoolOption( 'gpgmail-enable' ) ) {
+			if ( MediaWikiServices::getInstance()->getUserOptionsLookup()
+				->getBoolOption( $user, 'gpgmail-enable' )
+			) {
 				unset( $to[$i] );
 			}
 		}
