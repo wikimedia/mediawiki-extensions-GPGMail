@@ -159,9 +159,13 @@ class GPGMailHooks {
 	 * @return Status Success or an error message
 	 */
 	protected static function maybeEncrypt( &$text, $user ) {
-		if ( $user->getBoolOption( 'gpgmail-enable' ) && !self::usePgpMime() ) {
+		$userOptionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
+		if ( $userOptionsLookup->getBoolOption( $user, 'gpgmail-enable' ) && !self::usePgpMime() ) {
 			try {
-				$text = self::getGPGLib()->encrypt( $text, $user->getOption( 'gpgmail-key' ) );
+				$text = self::getGPGLib()->encrypt(
+					$text,
+					$userOptionsLookup->getOption( $user, 'gpgmail-key' )
+				);
 			} catch ( GpgLibException $e ) {
 				return Status::newFatal( new RawMessage( $e->getMessage() ) );
 			}
@@ -179,11 +183,12 @@ class GPGMailHooks {
 	 * @return Status Success or an error message
 	 */
 	protected static function maybeEncryptMime( &$headers, &$body, $user ) {
-		if ( $user->getBoolOption( 'gpgmail-enable' ) && self::usePgpMime() ) {
+		$userOptionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
+		if ( $userOptionsLookup->getBoolOption( $user, 'gpgmail-enable' ) && self::usePgpMime() ) {
 			try {
 				$pgpMime = new PgpMime( self::getGPGLib() );
 				list( $headers, $body ) = $pgpMime->encrypt(
-					$headers, $body, $user->getOption( 'gpgmail-key' ) );
+					$headers, $body, $userOptionsLookup->getOption( $user, 'gpgmail-key' ) );
 			} catch ( GpgLibException $e ) {
 				return Status::newFatal( new RawMessage( $e->getMessage() ) );
 			}
