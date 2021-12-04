@@ -1,23 +1,4 @@
 {
-	"name": "wikimedia/mediawiki-extensions-GPGMail",
-	"description": "Encrypt emails with GPG",
-	"version": "0.1.0",
-	"keywords": [
-		"gpg",
-		"encryption"
-	],
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Gergő Tisza",
-			"email": "tgr.huwiki@gmail.com"
-		}
-	],
-	"support": {
-		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-gpgmail/",
-		"source": "https://github.com/wikimedia/mediawiki-extensions-GPGMail",
-		"docs": "https://www.mediawiki.org/wiki/Extension:GPGMail"
-	},
 	"require": {
 		"composer/installers": ">=1.0.1",
 		"wikimedia/gpglib": "0.2.*"
