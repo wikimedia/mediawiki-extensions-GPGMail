@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"gpgmail-desc": "Šifrira e-pošto z GPG",
+	"gpgmail-pref-enable": "Šifriraj e-pošto z GPG",
+	"gpgmail-pref-key": "Javni ključ GPG",
+	"gpgmail-pref-key-help": "Pomoč za pridobitev javnega ključa je na voljo na [https://help.ubuntu.com/community/GnuPrivacyGuardHowto strani tehničnih navodil za Ubuntu]",
+	"gpgmail-encrypt-error": "Pri šifriranju e-pošte je prišlo do napake."
+}
