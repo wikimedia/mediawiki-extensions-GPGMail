@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Urhixidur"
+			"Urhixidur",
+			"Verdy p"
 		]
 	},
 	"gpgmail-desc": "Chiffrer les courriels avec GPG",
 	"gpgmail-pref-enable": "Chiffrer les courriels avec GPG",
 	"gpgmail-pref-key": "Clé publique GPG",
-	"gpgmail-pref-key-help": "Voir [https://help.ubuntu.com/community/GnuPrivacyGuardHowto la page comment faire de Ubuntu] pour savoir comment obtenir une clé publique.",
-	"gpgmail-encrypt-error": "Il y a eu une erreur lors du chiffrement du courriel."
+	"gpgmail-pref-key-help": "Consultez la [https://help.ubuntu.com/community/GnuPrivacyGuardHowto page « Comment faire » d’Ubuntu] pour savoir comment obtenir une clé publique.",
+	"gpgmail-encrypt-error": "Une erreur s’est produite lors du chiffrement du courriel."
 }
