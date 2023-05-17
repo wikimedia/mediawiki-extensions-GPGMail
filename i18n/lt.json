@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Zygimantus"
+			"Zygimantus",
+			"Nokeoo"
 		]
 	},
 	"gpgmail-desc": "Šifruoti laiškus su GPG",
 	"gpgmail-pref-enable": "Šifruoti laiškus su GPG",
-	"gpgmail-pref-key": "GPG viešasis raktas"
+	"gpgmail-pref-key": "GPG viešasis raktas",
+	"gpgmail-pref-key-help": "Žiūrėkite [https://help.ubuntu.com/community/GnuPrivacyGuardHowto Ubuntu instrukcijų puslapį] pagalbai dėl viešo rakto gavimo.",
+	"gpgmail-encrypt-error": "Šifruojant el. laišką įvyko klaida."
 }
