@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"Siebrand"
 		]
 	},
-	"gpgmail-pref-key-help": "Zie de [https://help.ubuntu.com/community/GnuPrivacyGuardHowto hulppagina van Ubuntu] for voor meer informatie over het verkrijgen van een openbare sleutel."
+	"gpgmail-desc": "E-mails versleutelen met GPG",
+	"gpgmail-pref-enable": "E-mails versleutelen met GPG",
+	"gpgmail-pref-key": "Openbare GPG-sleutel",
+	"gpgmail-pref-key-help": "Zie de [https://help.ubuntu.com/community/GnuPrivacyGuardHowto hulppagina van Ubuntu] for voor meer informatie over het verkrijgen van een openbare sleutel.",
+	"gpgmail-encrypt-error": "Er is een fout opgetreden bij het versleutelen van de e-mail."
 }
