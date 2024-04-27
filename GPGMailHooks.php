@@ -187,7 +187,7 @@ class GPGMailHooks {
 		if ( $userOptionsLookup->getBoolOption( $user, 'gpgmail-enable' ) && self::usePgpMime() ) {
 			try {
 				$pgpMime = new PgpMime( self::getGPGLib() );
-				list( $headers, $body ) = $pgpMime->encrypt(
+				[ $headers, $body ] = $pgpMime->encrypt(
 					$headers, $body, $userOptionsLookup->getOption( $user, 'gpgmail-key' ) );
 			} catch ( GpgLibException $e ) {
 				return Status::newFatal( new RawMessage( $e->getMessage() ) );
