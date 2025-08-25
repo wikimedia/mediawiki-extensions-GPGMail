@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"gpgmail-desc": "جي‌پي‌جي سره د برېښليکونو کوډ کول",
+	"gpgmail-pref-enable": "جي‌پي‌جي سره د برېښليکونو کوډ کول",
+	"gpgmail-pref-key": "جي‌پي‌جي ټولگړې کونجي",
+	"gpgmail-pref-key-help": "د ټولگړې کونجۍ ترلاسه کولو د مرستې لپاره [https://help.ubuntu.com/community/GnuPrivacyGuardHowto د اوبونټو څنگه کولو مخ] وگورئ.",
+	"gpgmail-encrypt-error": "د برېښليک کوډکولو پرمهال يوه تېروتنه وشوه."
+}
