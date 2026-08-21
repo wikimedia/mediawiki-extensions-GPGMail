@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"gpgmail-desc": "Šifruje e-maily pomocou GPG",
+	"gpgmail-pref-enable": "Šifrovať e-maily pomocou GPG",
+	"gpgmail-pref-key": "Verejný kľúč GPG",
+	"gpgmail-pref-key-help": "Pomoc so získaním verejného kľúča nájdete na [https://help.ubuntu.com/community/GnuPrivacyGuardHowto stránke návodov Ubuntu].",
+	"gpgmail-encrypt-error": "Pri šifrovaní e-mailu nastala chyba."
+}
